@@ -1,14 +1,18 @@
 <html>
 <head>
 
-<title>S-RIM 공식</title>      
+  <title>S-RIM 공식</title>      
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/demo.css"> 
   <link rel="stylesheet" href="css/table.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <style type="text/css">
 
@@ -16,7 +20,7 @@
 
     .pd-table {
       width: 100%;
-      max-width: 85%;
+      max-width: 70%;
       margin: 40px auto;
     }
 
@@ -49,7 +53,6 @@
       background-color: rgba(120, 120, 120, 0.4);
     }
 
-
     body {
       text-align: center;
       color: #fff;
@@ -60,6 +63,36 @@
     }
 
     .container {
+      margin-top: 50px;
+    }
+
+    .ghost-button-full-color {
+      display: inline-block;
+      width: 150px;
+      padding: 8px;
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #fff;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+      transition: color 0.3s ease-out,
+      background-color 0.3s ease-out,
+      border-color 0.3s ease-out;
+    }
+    .ghost-button-full-color:hover,
+    .ghost-button-full-color:active {
+      background-color: #737ade;
+      border-color: #737ade;
+      color: #fff;
+      -webkit-transition:color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+      transition: color 0.3s ease-in,
+      background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
+    }
+
+    .button {
       margin-top: 50px;
     }
 
@@ -75,6 +108,14 @@
     <section class="sec-spacer">
       <div class="container container-center">
         <h2 class="title text-center">S-RIM 공식</h2>
+
+        <div class="button">
+          <a class="ghost-button-full-color" href="#">저가</a>
+          <a class="ghost-button-full-color" href="#">적정저가</a>
+          <a class="ghost-button-full-color" href="#">적정고가</a>
+          <a class="ghost-button-full-color" href="#">고가</a>
+        </div>
+
         <div class="table-responsive">          
           <table class="pd-table pd-table-striped">
             <thead>
