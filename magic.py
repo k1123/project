@@ -9,6 +9,9 @@ db = client.dbsparta
 
 def job():
 
+    # DB에 저장된 데이터 삭제
+    db.magicdata.drop()
+
     # 크롤링 사이에 랜덤으로 시간 텀을 주기
     sleep_second = random.randint(5, 150)
     time.sleep(sleep_second)
@@ -160,7 +163,7 @@ def job():
 
 # 정해진 시간에 크롤링 하기기
 def run():
-    schedule.every().day.at('21:20').do(job)
+    schedule.every().day.at('21:53').do(job)
     while True:
         schedule.run_pending()
 
